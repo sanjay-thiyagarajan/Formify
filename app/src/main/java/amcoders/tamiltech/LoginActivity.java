@@ -37,9 +37,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        loadLocale();
-        finish();
-        startActivity(getIntent());
+      //  loadLocale();
+     //   finish();
+      //  startActivity(getIntent());
         forgotLink = (TextView) findViewById(R.id.forgot_link);
         LoginButton = (Button) findViewById(R.id.login_button);
         emailET = (EditText) findViewById(R.id.login_email_et);
@@ -112,6 +112,9 @@ public class LoginActivity extends AppCompatActivity {
                                     if(task.isSuccessful())
                                     {
                                         Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                                        Intent dashIntent = new Intent(LoginActivity.this, DashboardActivity.class);
+                                        dashIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        startActivity(dashIntent);
                                     }
                                     else
                                     {
