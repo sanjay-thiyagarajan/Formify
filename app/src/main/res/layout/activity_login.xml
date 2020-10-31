@@ -62,7 +62,7 @@
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:hint="@string/pass"
-            android:inputType="numberPassword"
+            android:inputType="textPassword"
             android:background="@drawable/bg_white_edit_text"/>
 
         <TextView
