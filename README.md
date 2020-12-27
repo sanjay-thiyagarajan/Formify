@@ -7,4 +7,6 @@ I worked on this project in correspondance with Yaadhum Oore Global Conclave Hac
 ## Targeted users
 * Uneducated people from rural places.
 * Everyone who wishes to simplify the process of form-filling.
-
+## Team
+* Sanjay T (Myself)
+* Jayanth Vikash S
